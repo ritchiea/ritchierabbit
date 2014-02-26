@@ -28,6 +28,9 @@ GEM
     arel (4.0.2)
     atomic (1.1.14)
     awesome_print (1.2.0)
+    bcrypt (3.1.7)
+    bcrypt-ruby (3.1.5)
+      bcrypt (>= 3.1.3)
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -53,6 +56,12 @@ GEM
       debugger-ruby_core_source (~> 1.3.1)
     debugger-linecache (1.2.0)
     debugger-ruby_core_source (1.3.1)
+    devise (3.2.3)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
     diff-lcs (1.2.5)
     diffy (3.0.1)
     dotenv (0.9.0)
@@ -96,6 +105,7 @@ GEM
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.8.4)
+    orm_adapter (0.5.0)
     pg (0.17.1)
     polyglot (0.3.4)
     posix-spawn (0.3.8)
@@ -176,6 +186,8 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    warden (1.2.3)
+      rack (>= 1.0)
     xray-rails (0.1.12)
       coffee-rails
       rails (>= 3.1.0)
@@ -189,6 +201,7 @@ DEPENDENCIES
   binding_of_caller
   bootstrap-sass
   coffee-rails (~> 4.0.0)
+  devise
   dotenv-rails
   haml
   jazz_hands
