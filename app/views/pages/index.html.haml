@@ -1,7 +1,13 @@
 .container-fluid
   .row
-    .col-md-12
+    .col-md-10.col-md-offset-1
       .header
         %h1.brand RitchieRabbit
   .row
-    .col-md-12
+    .col-md-10.col-md-offset-1
+      .main
+        .hero
+          = image_tag 'ritchie.jpg', class: 'hero-img'
+          .overlay.main-overlay
+            .main-copy
+              %h1.white Your To-Do's, done by Ritchie
